@@ -4,7 +4,6 @@
     "about": "Over ons",
     "pricesMen": "Prijzen heren",
     "pricesWomen": "Prijzen dames",
-    "extensions": "Haarverlenging",
     "brands": "Onze merken",
     "contact": "Contact",
     "book": "Afspraak maken",
@@ -34,8 +33,6 @@
     "cutDesc": "Professioneel knippen en stylen voor een perfecte look, afgestemd op jouw gezichtsvorm en persoonlijkheid.",
     "color": "Kleuren & Balayage",
     "colorDesc": "Hoogwaardige kleurtechnieken die je natuurlijke schoonheid versterken en glans geven.",
-    "extensions": "Haarverlenging",
-    "extensionsDesc": "Natuurlijke haarverlengingen van de hoogste kwaliteit, naadloos geïntegreerd voor een onzichtbaar resultaat.",
     "bridal": "Bruidsarrangementen",
     "bridalDesc": "Complete bruidsbehandelingen die je stralend maken op de mooiste dag van je leven.",
     "treatment": "Haarbehandelingen",
@@ -81,11 +78,6 @@
   "pricesWomen": {
     "title": "Prijzen dames",
     "subtitle": "Onze tarieven voor damesbehandelingen"
-  },
-  "extensions": {
-    "title": "Haarverlenging",
-    "subtitle": "Natuurlijke haarverlengingen van topkwaliteit",
-    "text": "Bij Endless Hair by Hasibe bieden wij professionele haarverlengingen aan met uitsluitend het beste kwaliteit haar. Of je nu droomt van weelderige volume, extra lengte of een subtiele uitstraling — onze specialisten adviseren je vrijblijvend over de mogelijkheden en vinden de perfecte match voor jouw haartype."
   },
   "brands": {
     "title": "Onze merken",
