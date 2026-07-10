@@ -13,7 +13,6 @@ const navLinks = [
   { key: "about", href: "/about" },
   { key: "pricesMen", href: "/prices/men" },
   { key: "pricesWomen", href: "/prices" },
-  { key: "extensions", href: "/extensions" },
   { key: "brands", href: "/brands" },
   { key: "contact", href: "/contact" },
 ] as const;
@@ -23,13 +22,6 @@ export default function Header() {
   const locale = useLocale();
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   useEffect(() => {
     setMobileOpen(false);
@@ -49,11 +41,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "bg-white/90 backdrop-blur-md shadow-sm border-b border-border"
-          : "bg-transparent"
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-border transition-all duration-500"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -74,10 +62,8 @@ export default function Header() {
                 href={link.href}
                 className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
                   pathname === link.href
-                    ? scrolled ? "text-primary bg-primary/5" : "text-primary bg-white/10"
-                    : scrolled
-                      ? "text-foreground/70 hover:text-foreground hover:bg-accent/50"
-                      : "text-white/70 hover:text-white hover:bg-white/10"
+                    ? "text-primary bg-primary/5"
+                    : "text-foreground/70 hover:text-foreground hover:bg-accent/50"
                 }`}
               >
                 {t(link.key)}
@@ -89,9 +75,7 @@ export default function Header() {
             <LanguageSwitcher />
             <button
               onClick={() => setMobileOpen(true)}
-              className={`lg:hidden p-2 rounded-lg transition-colors ${
-                scrolled ? "hover:bg-accent text-foreground" : "hover:bg-white/10 text-white"
-              }`}
+              className="lg:hidden p-2 rounded-lg transition-colors hover:bg-accent text-foreground"
               aria-label="Open menu"
             >
               <Menu size={22} />
