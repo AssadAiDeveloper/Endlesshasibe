@@ -4,7 +4,6 @@
     "about": "About Us",
     "pricesMen": "Men's Prices",
     "pricesWomen": "Women's Prices",
-    "extensions": "Hair Extensions",
     "brands": "Our Brands",
     "contact": "Contact",
     "book": "Book an Appointment",
@@ -34,8 +33,6 @@
     "cutDesc": "Professional cutting and styling for the perfect look, tailored to your face shape and personality.",
     "color": "Color & Balayage",
     "colorDesc": "High-quality color techniques that enhance your natural beauty and add brilliant shine.",
-    "extensions": "Hair Extensions",
-    "extensionsDesc": "Natural hair extensions of the highest quality, seamlessly integrated for an invisible finish.",
     "bridal": "Bridal Arrangements",
     "bridalDesc": "Complete bridal treatments that make you radiate on the most beautiful day of your life.",
     "treatment": "Hair Treatments",
@@ -81,11 +78,6 @@
   "pricesWomen": {
     "title": "Women's Prices",
     "subtitle": "Our rates for women's treatments"
-  },
-  "extensions": {
-    "title": "Hair Extensions",
-    "subtitle": "Natural hair extensions of top quality",
-    "text": "At Endless Hair by Hasibe we offer professional hair extensions using only the best quality hair. Whether you dream of lush volume, extra length, or a subtle enhancement — our specialists are happy to advise you on the possibilities and find the perfect match for your hair type and wishes."
   },
   "brands": {
     "title": "Our Brands",
