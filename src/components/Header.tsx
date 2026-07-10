@@ -35,6 +35,15 @@ export default function Header() {
     setMobileOpen(false);
   }, [pathname]);
 
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [mobileOpen]);
+
   const isRtl = locale === "ar";
   const logoText = isRtl ? "إندليس هير باي هاسيبي" : "Endless Hair by Hasibe";
 
