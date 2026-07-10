@@ -2,13 +2,12 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Scissors, Palette, Shirt, Heart, Sparkles } from "lucide-react";
+import { Scissors, Palette, Heart, Sparkles } from "lucide-react";
 import { Link } from "@/i18n/routing";
 
 const icons = [
   <Scissors key="cut" size={28} />,
   <Palette key="color" size={28} />,
-  <Shirt key="ext" size={28} />,
   <Heart key="bridal" size={28} />,
   <Sparkles key="treatment" size={28} />,
 ];
@@ -16,7 +15,6 @@ const icons = [
 const links = [
   "/prices",
   "/prices",
-  "/extensions",
   "/",
   "/prices",
 ];
@@ -27,7 +25,6 @@ export default function ServicesSection() {
   const services = [
     { key: "cut" as const },
     { key: "color" as const },
-    { key: "extensions" as const },
     { key: "bridal" as const },
     { key: "treatment" as const },
   ];
@@ -50,7 +47,7 @@ export default function ServicesSection() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, i) => (
             <motion.div
               key={service.key}
