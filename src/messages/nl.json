@@ -80,15 +80,47 @@
   },
   "pricesMen": {
     "title": "Prijzen heren",
-    "subtitle": "Onze tarieven voor herenbehandelingen"
+    "subtitle": "Onze tarieven voor herenbehandelingen",
+    "items": [
+      { "name": "Heren knippen", "price": "€25,00" },
+      { "name": "Wassen & knippen", "price": "€35,00" },
+      { "name": "Knippen & baard", "price": "€38,00" },
+      { "name": "Baard trimmen", "price": "€15,00" },
+      { "name": "Kleuren", "price": "Vanaf €55,00" }
+    ]
   },
   "pricesWomen": {
     "title": "Prijzen dames",
-    "subtitle": "Onze tarieven voor damesbehandelingen"
+    "subtitle": "Onze tarieven voor damesbehandelingen",
+    "items": [
+      { "name": "Wassen & drogen", "price": "€20,00" },
+      { "name": "Dames knippen", "price": "€30,00" },
+      { "name": "Kinderen tot 12 jaar", "price": "€20,00" },
+      { "name": "Föhnen", "price": "Vanaf €35,00" },
+      { "name": "Krullen", "price": "Vanaf €50,00" },
+      { "name": "Uitgroei verven", "price": "Vanaf €45,00" },
+      { "name": "Hele haar verven", "price": "Vanaf €70,00" },
+      { "name": "Highlights (per folie)", "price": "€3,00" },
+      { "name": "Permanenten deel", "price": "Vanaf €60,00" },
+      { "name": "Permanenten hele haar", "price": "Vanaf €75,00" },
+      { "name": "Braziliaans keratine behandeling", "price": "Vanaf €120,00" },
+      { "name": "Wenkbrauwen/wimpers verven", "price": "€15,00" },
+      { "name": "Wenkbrauwen epileren", "price": "€15,00" },
+      { "name": "Gezicht epileren", "price": "€17,50" },
+      { "name": "Schoonheidsbehandelingen", "price": "Vanaf €55,00" }
+    ]
   },
   "brands": {
     "title": "Onze merken",
-    "subtitle": "Wij werken alleen met de beste producten"
+    "subtitle": "Wij werken alleen met de beste producten",
+    "items": [
+      { "name": "Kerastase", "desc": "Luxueuze haarverzorging" },
+      { "name": "L'Oreal Professionnel", "desc": "Professionele kleur & verzorging" },
+      { "name": "Redken", "desc": "Innovatieve haaroplossingen" },
+      { "name": "Wella", "desc": "Premium haarexpertise" },
+      { "name": "Schwarzkopf", "desc": "Professionele haarcosmetica" },
+      { "name": "Moroccanoil", "desc": "Arganolie behandelingen" }
+    ]
   },
   "contactPage": {
     "title": "Contact",

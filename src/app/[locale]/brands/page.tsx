@@ -4,17 +4,9 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
 
-const brands = [
-  { name: "Kerastase", desc: "Luxury hair care" },
-  { name: "L'Oreal Professionnel", desc: "Professional color & care" },
-  { name: "Redken", desc: "Innovative hair solutions" },
-  { name: "Wella", desc: "Premium hair expertise" },
-  { name: "Schwarzkopf", desc: "Professional hair cosmetics" },
-  { name: "Moroccanoil", desc: "Argan oil treatments" },
-];
-
 export default function BrandsPage() {
   const t = useTranslations("brands");
+  const items = t.raw("items") as { name: string; desc: string }[];
 
   return (
     <>
@@ -40,9 +32,9 @@ export default function BrandsPage() {
       <section className="py-20 bg-cream">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {brands.map((brand, i) => (
+            {items.map((item, i) => (
               <motion.div
-                key={brand.name}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -52,8 +44,8 @@ export default function BrandsPage() {
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-colors">
                   <Sparkles size={24} className="text-primary group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="text-lg font-semibold text-charcoal mb-1">{brand.name}</h3>
-                <p className="text-sm text-muted">{brand.desc}</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-1">{item.name}</h3>
+                <p className="text-sm text-muted">{item.desc}</p>
               </motion.div>
             ))}
           </div>

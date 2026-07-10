@@ -4,16 +4,11 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Scissors, Sparkles } from "lucide-react";
 
-const priceItems = [
-  { name: "Heren knippen", price: "€25,00", icon: <Scissors size={20} /> },
-  { name: "Wassen & knippen", price: "€35,00", icon: <Scissors size={20} /> },
-  { name: "Knippen & baard", price: "€38,00", icon: <Scissors size={20} /> },
-  { name: "Baard trimmen", price: "€15,00", icon: <Scissors size={20} /> },
-  { name: "Kleuren", price: "Vanaf €55,00", icon: <Sparkles size={20} /> },
-];
+const icons = [<Scissors size={20} />, <Scissors size={20} />, <Scissors size={20} />, <Scissors size={20} />, <Sparkles size={20} />];
 
 export default function PricesMenPage() {
   const t = useTranslations("pricesMen");
+  const items = t.raw("items") as { name: string; price: string }[];
 
   return (
     <>
@@ -36,9 +31,9 @@ export default function PricesMenPage() {
       <section className="py-20 bg-cream">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-3">
-            {priceItems.map((item, i) => (
+            {items.map((item, i) => (
               <motion.div
-                key={item.name}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -47,7 +42,7 @@ export default function PricesMenPage() {
               >
                 <div className="flex items-center gap-4">
                   <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                    {item.icon}
+                    {icons[i % icons.length]}
                   </div>
                   <span className="text-sm font-medium text-charcoal">{item.name}</span>
                 </div>

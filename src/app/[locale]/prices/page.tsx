@@ -6,26 +6,9 @@ import { Scissors, Sparkles, Droplets, Zap, Eye, Sun, Wind } from "lucide-react"
 
 const icons = [<Scissors size={20} />, <Droplets size={20} />, <Scissors size={20} />, <Scissors size={20} />, <Sparkles size={20} />, <Sparkles size={20} />, <Sparkles size={20} />, <Wind size={20} />, <Zap size={20} />, <Sparkles size={20} />, <Sparkles size={20} />, <Zap size={20} />, <Eye size={20} />, <Eye size={20} />, <Sun size={20} />, <Sparkles size={20} />];
 
-const priceItems = [
-  { name: "Wassen & drogen", price: "€20,00" },
-  { name: "Dames knippen", price: "€30,00" },
-  { name: "Kinderen tot 12 jaar", price: "€20,00" },
-  { name: "Föhnen", price: "Vanaf €35,00" },
-  { name: "Krullen", price: "Vanaf €50,00" },
-  { name: "Uitgroei verven", price: "Vanaf €45,00" },
-  { name: "Hele haar verven", price: "Vanaf €70,00" },
-  { name: "Highlights (per folie)", price: "€3,00" },
-  { name: "Permanenten deel", price: "Vanaf €60,00" },
-  { name: "Permanenten hele haar", price: "Vanaf €75,00" },
-  { name: "Braziliaans keratine behandeling", price: "Vanaf €120,00" },
-  { name: "Wenkbrauwen/wimpers verven", price: "€15,00" },
-  { name: "Wenkbrauwen epileren", price: "€15,00" },
-  { name: "Gezicht epileren", price: "€17,50" },
-  { name: "Schoonheidsbehandelingen", price: "Vanaf €55,00" },
-];
-
 export default function PricesPage() {
   const t = useTranslations("pricesWomen");
+  const items = t.raw("items") as { name: string; price: string }[];
 
   return (
     <>
@@ -48,9 +31,9 @@ export default function PricesPage() {
       <section className="py-20 bg-cream">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-3">
-            {priceItems.map((item, i) => (
+            {items.map((item, i) => (
               <motion.div
-                key={item.name}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}

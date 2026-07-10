@@ -80,15 +80,47 @@
   },
   "pricesMen": {
     "title": "Men's Prices",
-    "subtitle": "Our rates for men's treatments"
+    "subtitle": "Our rates for men's treatments",
+    "items": [
+      { "name": "Men's haircut", "price": "€25.00" },
+      { "name": "Wash & cut", "price": "€35.00" },
+      { "name": "Cut & beard", "price": "€38.00" },
+      { "name": "Beard trim", "price": "€15.00" },
+      { "name": "Color", "price": "From €55.00" }
+    ]
   },
   "pricesWomen": {
     "title": "Women's Prices",
-    "subtitle": "Our rates for women's treatments"
+    "subtitle": "Our rates for women's treatments",
+    "items": [
+      { "name": "Wash & dry", "price": "€20.00" },
+      { "name": "Women's cut", "price": "€30.00" },
+      { "name": "Children up to 12", "price": "€20.00" },
+      { "name": "Blow-dry", "price": "From €35.00" },
+      { "name": "Curling", "price": "From €50.00" },
+      { "name": "Root touch-up", "price": "From €45.00" },
+      { "name": "Full color", "price": "From €70.00" },
+      { "name": "Highlights (per foil)", "price": "€3.00" },
+      { "name": "Partial perm", "price": "From €60.00" },
+      { "name": "Full perm", "price": "From €75.00" },
+      { "name": "Brazilian keratin treatment", "price": "From €120.00" },
+      { "name": "Brow/lash tinting", "price": "€15.00" },
+      { "name": "Eyebrow waxing", "price": "€15.00" },
+      { "name": "Face waxing", "price": "€17.50" },
+      { "name": "Beauty treatments", "price": "From €55.00" }
+    ]
   },
   "brands": {
     "title": "Our Brands",
-    "subtitle": "We only work with the best products"
+    "subtitle": "We only work with the best products",
+    "items": [
+      { "name": "Kerastase", "desc": "Luxury hair care" },
+      { "name": "L'Oreal Professionnel", "desc": "Professional color & care" },
+      { "name": "Redken", "desc": "Innovative hair solutions" },
+      { "name": "Wella", "desc": "Premium hair expertise" },
+      { "name": "Schwarzkopf", "desc": "Professional hair cosmetics" },
+      { "name": "Moroccanoil", "desc": "Argan oil treatments" }
+    ]
   },
   "contactPage": {
     "title": "Contact",
