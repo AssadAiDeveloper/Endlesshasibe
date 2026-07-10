@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Over ons",
+    "pricesMen": "Prijzen heren",
+    "pricesWomen": "Prijzen dames",
+    "extensions": "Haarverlenging",
+    "brands": "Onze merken",
+    "contact": "Contact",
+    "book": "Afspraak maken",
+    "bridal": "Bruidsarrangementen"
+  },
+  "hero": {
+    "title": "Endless Hair by Hasibe",
+    "subtitle": "Waar passie voor haar perfectie ontmoet",
+    "cta": "Maak een afspraak",
+    "excellence": "Exclusieve boutique salon in Heemskerk"
+  },
+  "about": {
+    "sectionTitle": "Over ons",
+    "title": "Make A Statement",
+    "tagline": "Exclusieve salon in Heemskerk",
+    "body": "Welkom bij Endless Hair by Hasibe — een exclusieve boutique salon waar stijl en vakmanschap samenkomen. In een warme en uitnodigende ambiance bieden wij een complete haarsalonervaring die is afgestemd op jouw unieke persoonlijkheid en wensen.",
+    "body2": "Wij werken uitsluitend met hoogwaardige, natuurlijke en vegan producten van gerenommeerde merken. Onze gespecialiseerde stylisten combineren jarenlange ervaring met oog voor de nieuwste trends, zodat jij verzekerd bent van een perfect resultaat — van een eenvoudige knipbeurt tot een complete metamorfose.",
+    "body3": "Of je nu komt voor een frisse nieuwe look, een doeltreffende haarbehandeling of een ontspannend verzorgingsmoment: bij ons sta jij centraal. Ontdek het verschil van persoonlijke aandacht, passie voor het vak en een onberispelijke service.",
+    "phone": "0251 201 202",
+    "cta": "Maak telefonisch een afspraak via",
+    "or": "of boek eenvoudig online.",
+    "follow": "Volg je ons trouwens al op Facebook of Instagram? Daar geven we je een kijkje achter de schermen en zie je ons portfolio!"
+  },
+  "services": {
+    "sectionTitle": "Onze behandelingen",
+    "cut": "Knippen & Stylen",
+    "cutDesc": "Professioneel knippen en stylen voor een perfecte look, afgestemd op jouw gezichtsvorm en persoonlijkheid.",
+    "color": "Kleuren & Balayage",
+    "colorDesc": "Hoogwaardige kleurtechnieken die je natuurlijke schoonheid versterken en glans geven.",
+    "extensions": "Haarverlenging",
+    "extensionsDesc": "Natuurlijke haarverlengingen van de hoogste kwaliteit, naadloos geïntegreerd voor een onzichtbaar resultaat.",
+    "bridal": "Bruidsarrangementen",
+    "bridalDesc": "Complete bruidsbehandelingen die je stralend maken op de mooiste dag van je leven.",
+    "treatment": "Haarbehandelingen",
+    "treatmentDesc": "Vegan en natuurlijke behandelingen die je haar voeden, herstellen en beschermen."
+  },
+  "gallery": {
+    "sectionTitle": "Onze galerij"
+  },
+  "contact": {
+    "sectionTitle": "Contact",
+    "addressLabel": "Adres",
+    "phoneLabel": "Telefoon",
+    "emailLabel": "E-mail",
+    "address": "Europaplein 49, 1966 WC Heemskerk",
+    "phone": "0251 201 202",
+    "email": "info@endlesshairhasibe.nl",
+    "hoursTitle": "Openingstijden",
+    "hours": {
+      "mon": "Maandag 12:00 - 17:00",
+      "tue": "Dinsdag 09:00 - 17:00",
+      "wed": "Woensdag 09:00 - 17:00",
+      "thu": "Donderdag 09:00 - 17:00",
+      "fri": "Vrijdag 09:00 - 17:00",
+      "sat": "Zaterdag 09:00 - 17:00",
+      "sun": "Zondag gesloten"
+    }
+  },
+  "footer": {
+    "rights": "Alle rechten voorbehouden",
+    "privacy": "Privacybeleid",
+    "terms": "Algemene voorwaarden"
+  },
+  "aboutPage": {
+    "title": "Over Endless Hair by Hasibe",
+    "subtitle": "Ons verhaal",
+    "text": "Endless Hair by Hasibe is een exclusieve boutique salon, gevestigd in het bruisende hart van Heemskerk. Met een diepe passie voor het kappersvak en een oog voor detail bieden wij een breed scala aan premium haardiensten voor zowel dames als heren. Onze salon staat bekend om de warme, professionele benadering, het gebruik van topkwaliteit producten en het streven naar perfectie.",
+    "text2": "Wij geloven dat mooi haar begint bij een persoonlijke benadering. Daarom besteden wij de tijd om naar jouw wensen te luisteren en een behandeling op maat te creëren. Onze stylisten volgen continu de nieuwste technieken en trends, zodat jij altijd verzekerd bent van een stijlvol en verzorgd resultaat."
+  },
+  "pricesMen": {
+    "title": "Prijzen heren",
+    "subtitle": "Onze tarieven voor herenbehandelingen"
+  },
+  "pricesWomen": {
+    "title": "Prijzen dames",
+    "subtitle": "Onze tarieven voor damesbehandelingen"
+  },
+  "extensions": {
+    "title": "Haarverlenging",
+    "subtitle": "Natuurlijke haarverlengingen van topkwaliteit",
+    "text": "Bij Endless Hair by Hasibe bieden wij professionele haarverlengingen aan met uitsluitend het beste kwaliteit haar. Of je nu droomt van weelderige volume, extra lengte of een subtiele uitstraling — onze specialisten adviseren je vrijblijvend over de mogelijkheden en vinden de perfecte match voor jouw haartype."
+  },
+  "brands": {
+    "title": "Onze merken",
+    "subtitle": "Wij werken alleen met de beste producten"
+  },
+  "contactPage": {
+    "title": "Contact",
+    "subtitle": "Neem gerust contact met ons op",
+    "addressLabel": "Adres",
+    "phoneLabel": "Telefoon",
+    "emailLabel": "E-mail",
+    "hoursLabel": "Openingstijden",
+    "formName": "Naam",
+    "formEmail": "E-mail",
+    "formPhone": "Telefoon",
+    "formMessage": "Bericht",
+    "formSubmit": "Versturen"
+  },
+  "bridal": {
+    "title": "Bruidsarrangementen",
+    "subtitle": "Stralend op uw mooiste dag"
+  }
+}
