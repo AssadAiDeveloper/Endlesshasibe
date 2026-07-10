@@ -47,17 +47,15 @@ export default function AboutPage() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6"
           >
-            {Array.from({ length: 4 }, (_, i) => (
-              <div key={i} className="text-center p-6 bg-white rounded-2xl border border-border">
+            {["experience", "clients", "satisfaction", "rating"].map((key, i) => (
+              <div key={key} className="text-center p-6 bg-white rounded-2xl border border-border">
                 <div className="flex justify-center mb-2">
                   {Array.from({ length: 5 }, (_, j) => (
                     <Star key={j} size={14} className="text-primary fill-primary" />
                   ))}
                 </div>
-                <p className="text-2xl font-bold text-charcoal">{i === 0 ? "15+" : i === 1 ? "5000+" : i === 2 ? "100%" : "5.0"}</p>
-                <p className="text-sm text-muted mt-1">
-                  {i === 0 ? "Years Experience" : i === 1 ? "Happy Clients" : i === 2 ? "Satisfaction" : "Rating"}
-                </p>
+                <p className="text-2xl font-bold text-charcoal">{t(`stats.${key}.value`)}</p>
+                <p className="text-sm text-muted mt-1">{t(`stats.${key}.label`)}</p>
               </div>
             ))}
           </motion.div>

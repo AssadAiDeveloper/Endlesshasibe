@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const galleryImages = [
   "/image/image1.jpeg",
@@ -47,14 +48,17 @@ export default function GallerySection() {
                   i % 3 === 0 ? "aspect-[3/4]" : i % 3 === 1 ? "aspect-square" : "aspect-[4/3]"
                 }`}
               >
-                <img
+                <Image
                   src={src}
                   alt={`Gallery ${i + 1}`}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  fill
+                  sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
                   <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity text-sm font-medium">
-                    View
+                    {t("view")}
                   </span>
                 </div>
               </div>

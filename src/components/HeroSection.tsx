@@ -16,6 +16,15 @@ const heroImages = [
   "/image/13.jpeg",
 ];
 
+const preloaded = new Set<string>();
+
+function preloadImage(src: string) {
+  if (preloaded.has(src)) return;
+  preloaded.add(src);
+  const img = new window.Image();
+  img.src = src;
+}
+
 export default function HeroSection() {
   const t = useTranslations("hero");
   const [activeIndex, setActiveIndex] = useState(0);
@@ -23,24 +32,32 @@ export default function HeroSection() {
 
   useEffect(() => {
     intervalRef.current = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % heroImages.length);
+      setActiveIndex((prev) => {
+        const next = (prev + 1) % heroImages.length;
+        preloadImage(heroImages[(next + 1) % heroImages.length]);
+        return next;
+      });
     }, 5000);
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
   }, []);
 
+  useEffect(() => {
+    preloadImage(heroImages[0]);
+    preloadImage(heroImages[1]);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-charcoal">
       <div className="absolute inset-0">
         {heroImages.map((img, i) => (
-          <motion.div
+          <div
             key={i}
-            initial={false}
-            animate={{ opacity: i === activeIndex ? 1 : 0 }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${img})` }}
+            className={`absolute inset-0 bg-cover bg-center transition-all duration-800 ease-in-out ${
+              i === activeIndex ? "opacity-100" : "opacity-0 pointer-events-none"
+            }`}
+            style={i === activeIndex ? { backgroundImage: `url(${img})` } : {}}
           />
         ))}
       </div>

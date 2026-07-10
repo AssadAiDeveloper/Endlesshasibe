@@ -39,7 +39,8 @@
     "treatmentDesc": "Vegan and natural treatments that nourish, restore and protect your hair."
   },
   "gallery": {
-    "sectionTitle": "Our Gallery"
+    "sectionTitle": "Our Gallery",
+    "view": "View"
   },
   "contact": {
     "sectionTitle": "Contact",
@@ -69,7 +70,13 @@
     "title": "About Endless Hair by Hasibe",
     "subtitle": "Our Story",
     "text": "Endless Hair by Hasibe is an exclusive boutique salon located in the heart of Heemskerk. With a deep passion for the hairdressing craft and an eye for detail, we offer a wide range of premium hair services for both women and men. Our salon is known for its warm, professional approach, use of top-quality products, and commitment to perfection.",
-    "text2": "We believe beautiful hair starts with a personal approach. That's why we take the time to listen to your wishes and create a tailor-made treatment. Our stylists continuously follow the latest techniques and trends, ensuring you always leave with a stylish and well-groomed result."
+    "text2": "We believe beautiful hair starts with a personal approach. That's why we take the time to listen to your wishes and create a tailor-made treatment. Our stylists continuously follow the latest techniques and trends, ensuring you always leave with a stylish and well-groomed result.",
+    "stats": {
+      "experience": { "value": "15+", "label": "Years Experience" },
+      "clients": { "value": "5000+", "label": "Happy Clients" },
+      "satisfaction": { "value": "100%", "label": "Satisfaction" },
+      "rating": { "value": "5.0", "label": "Rating" }
+    }
   },
   "pricesMen": {
     "title": "Men's Prices",
