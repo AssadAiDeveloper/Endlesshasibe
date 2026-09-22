@@ -2,7 +2,8 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Clock } from "lucide-react";
+import InstagramIcon from "./InstagramIcon";
 
 export default function ContactSection() {
   const t = useTranslations("contact");
@@ -67,14 +68,16 @@ export default function ContactSection() {
             className="p-8 rounded-2xl bg-cream border border-border"
           >
             <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-              <Mail size={22} className="text-primary" />
+              <InstagramIcon size={22} className="text-primary" />
             </div>
-            <h3 className="font-semibold text-charcoal mb-2">{t("emailLabel")}</h3>
+            <h3 className="font-semibold text-charcoal mb-2">{t("instagramLabel")}</h3>
             <a
-              href="mailto:info@endlesshairhasibe.nl"
+              href="https://www.instagram.com/endlesshairbyhasibe"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted text-sm hover:text-primary transition-colors"
             >
-              {t("email")}
+              {t("instagram")}
             </a>
           </motion.div>
 

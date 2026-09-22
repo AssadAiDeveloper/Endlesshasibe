@@ -1,7 +1,8 @@
 import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
+import InstagramIcon from "./InstagramIcon";
 
 export default function Footer() {
   const t = useTranslations();
@@ -38,9 +39,9 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail size={16} className="shrink-0 text-primary" />
-                <a href="mailto:info@endlesshairhasibe.nl" className="hover:text-white transition-colors">
-                  {t("contact.email")}
+                <InstagramIcon size={16} className="shrink-0 text-primary" />
+                <a href="https://www.instagram.com/endlesshairbyhasibe" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                  {t("contact.instagram")}
                 </a>
               </li>
             </ul>
